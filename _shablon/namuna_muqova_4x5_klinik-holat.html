@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<style>
+@font-face{font-family:"DM Serif Display";src:url("fonts/dm-serif-display-latin-400-normal.woff2") format("woff2");}
+@font-face{font-family:"DM Serif Display";src:url("fonts/dm-serif-display-latin-ext-400-normal.woff2") format("woff2");unicode-range:U+0100-024F,U+1E00-1EFF;}
+:root{
+  --emerald:#1B5E3F; --deep:#0D3122; --cream:#FAF7F0; --mint:#7FC9A0; --green:#4CAF7D;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1280px;height:720px;overflow:hidden;background:var(--deep)}
+.cover{position:relative;width:1280px;height:720px;overflow:hidden;font-family:"Inter",sans-serif;color:var(--cream);
+  background:
+    radial-gradient(900px 600px at 78% 40%, rgba(76,175,125,.22), transparent 60%),
+    radial-gradient(700px 500px at 0% 100%, rgba(13,49,34,.9), transparent 70%),
+    linear-gradient(135deg,#123F2C 0%, #1B5E3F 55%, #164D34 100%);}
+.grid{position:absolute;inset:0;background-image:
+    linear-gradient(rgba(250,247,240,.035) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(250,247,240,.035) 1px,transparent 1px);
+  background-size:40px 40px;}
+.ekg{position:absolute;left:0;top:300px;width:1280px;height:200px;opacity:.16}
+.left{position:absolute;left:64px;top:52px;width:690px}
+.brand{display:flex;align-items:center;gap:28px}
+.brand img{height:62px;display:block}
+.tag{display:flex;align-items:center;gap:14px;font-size:13px;letter-spacing:.32em;color:rgba(250,247,240,.72);font-weight:500}
+.tag i{width:4px;height:4px;border-radius:50%;background:var(--mint);display:inline-block}
+.tag .line{width:90px;height:1px;background:rgba(250,247,240,.35)}
+.kicker{margin-top:54px;display:inline-flex;align-items:center;gap:10px;font-size:15px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--mint)}
+.kicker span{display:inline-block;width:28px;height:2px;background:var(--mint)}
+h1{margin-top:16px;font-family:"DM Serif Display",serif;font-weight:400;font-size:78px;line-height:.98;letter-spacing:-.01em;color:var(--cream)}
+h1 em{font-style:normal;color:var(--mint)}
+.sub{margin-top:22px;font-size:21px;color:rgba(250,247,240,.82);font-weight:400}
+.points{position:absolute;left:64px;bottom:50px;display:flex;gap:0}
+.pt{width:172px;padding-right:18px;display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+.pt + .pt{padding-left:22px;border-left:1px solid rgba(250,247,240,.18)}
+.ic{width:52px;height:52px;border-radius:50%;border:1.6px solid rgba(250,247,240,.75);display:grid;place-items:center}
+.ic svg{width:26px;height:26px;stroke:var(--cream);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.pt p{font-size:15px;line-height:1.3;color:rgba(250,247,240,.92);font-weight:500}
+.card{position:absolute;right:56px;top:96px;width:400px;border-radius:22px;padding:28px 30px 26px;
+  background:linear-gradient(160deg,rgba(13,49,34,.82),rgba(13,49,34,.62));
+  border:1px solid rgba(127,201,160,.35);box-shadow:0 30px 60px rgba(0,0,0,.35)}
+.card .ch{display:flex;justify-content:space-between;align-items:center}
+.card .lbl{font-size:12px;letter-spacing:.24em;font-weight:600;color:var(--mint)}
+.card .pill{font-size:12px;font-weight:600;padding:5px 10px;border-radius:999px;background:rgba(127,201,160,.16);color:var(--mint)}
+.card h3{margin-top:14px;font-size:22px;font-weight:600}
+.card h3 small{display:block;margin-top:4px;font-size:14px;font-weight:400;color:rgba(250,247,240,.65)}
+.rows{margin-top:18px;border-top:1px solid rgba(250,247,240,.14)}
+.row{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid rgba(250,247,240,.10);font-size:16px}
+.row span:first-child{color:rgba(250,247,240,.68)}
+.row span:last-child{font-weight:600;font-variant-numeric:tabular-nums}
+.row .ok{color:var(--mint)}
+.quote{margin-top:18px;font-family:"DM Serif Display",serif;font-size:21px;line-height:1.25;color:var(--cream)}
+.ask{margin-top:16px;display:flex;align-items:center;justify-content:space-between;padding:13px 16px;border-radius:12px;background:var(--green);color:#0D3122;font-weight:700;font-size:17px}
+.ask svg{width:22px;height:22px;stroke:#0D3122;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+
+html,body{width:1080px;height:1350px}
+.cover{width:1080px;height:1350px}
+.ekg{top:525px;width:1080px}
+.left{left:72px;top:64px;width:940px}
+.brand img{height:72px}
+h1{font-size:96px;margin-top:18px}
+.kicker{margin-top:56px;font-size:17px}
+.sub{font-size:24px}
+.card{left:72px;right:72px;top:auto;bottom:250px;width:auto;padding:30px 34px}
+.rows{display:grid;grid-template-columns:1fr 1fr;column-gap:40px}
+.quote{font-size:24px}
+.points{left:72px;right:72px;bottom:60px}
+.pt{width:auto;flex:1}
+.pt p{font-size:17px}
+</style>
+</head>
+<body>
+<div class="cover">
+  <div class="grid"></div>
+  <svg class="ekg" viewBox="0 0 1280 200" preserveAspectRatio="none">
+    <polyline fill="none" stroke="#7FC9A0" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"
+      points="0,120 640,120 670,120 690,98 710,120 750,120 770,40 795,175 820,120 880,120 905,102 930,120 1280,120"/>
+  </svg>
+
+  <div class="left">
+    <div class="brand">
+      <img src="logo_dark_bg.png" alt="MaqolaMed">
+    </div>
+    <div class="tag" style="margin-top:22px"><span>ILM</span><i></i><span>AMALIYOT</span><i></i><span>ODAM UCHUN</span><span class="line"></span></div>
+    <div class="kicker"><span></span>Klinik holat · Pulmonologiya</div>
+    <h1>Yo‘tal, isitma,<br>sariq balg‘am:<br><em>antibiotik kerakmi?</em></h1>
+    <div class="sub">Ambulator yo‘talda qaror — dalillar asosida.</div>
+  </div>
+
+  <div class="points">
+    <div class="pt">
+      <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v8"/><path d="M12 11c-1 1-2.5 1.5-3.5 1"/><path d="M12 11c1 1 2.5 1.5 3.5 1"/><path d="M8.5 6.5C6 7 3.5 11 3.5 15.5 3.5 18.5 5 20 7 20c2 0 3-1.5 3-4v-6"/><path d="M15.5 6.5C18 7 20.5 11 20.5 15.5c0 3-1.5 4.5-3.5 4.5-2 0-3-1.5-3-4v-6"/></svg></div>
+      <p>Pnevmoniyami yoki bronxit?</p>
+    </div>
+    <div class="pt">
+      <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3c3 4 6 7.5 6 11a6 6 0 0 1-12 0c0-3.5 3-7 6-11z"/><path d="M9.5 14.5a2.5 2.5 0 0 0 2.5 2.5"/></svg></div>
+      <p>Sariq balg‘am nimani bildiradi?</p>
+    </div>
+    <div class="pt">
+      <div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="8.5" width="18" height="7" rx="3.5" transform="rotate(-40 12 12)"/><path d="M9.3 9.3l5.4 5.4" /></svg></div>
+      <p>Antibiotik aslida nima beradi?</p>
+    </div>
+    <div class="pt">
+      <div class="ic"><svg viewBox="0 0 24 24"><path d="M9 3h6"/><path d="M10 3v12.5a2 2 0 0 0 4 0V3"/><path d="M10 10h4"/><path d="M5 21h14"/></svg></div>
+      <p>CRP qachon yordam beradi?</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="ch"><span class="lbl">BEMOR</span><span class="pill">5-kun</span></div>
+    <h3>34 yosh, o‘qituvchi<small>Yo‘tal, sariq balg‘am, kecha 37,8°C</small></h3>
+    <div class="rows">
+      <div class="row"><span>Harorat</span><span>37,1°C</span></div>
+      <div class="row"><span>Puls</span><span>84 / daq</span></div>
+      <div class="row"><span>Nafas soni</span><span>16 / daq</span></div>
+      <div class="row"><span>SpO₂</span><span>98%</span></div>
+      <div class="row"><span>Auskultatsiya</span><span class="ok">toza</span></div><div class="row"><span>Yo‘tal</span><span>5 kun</span></div>
+    </div>
+    <div class="quote">«Doktor, antibiotik yozib bering. O‘tgan safar seftriakson yordam bergan edi».</div>
+    <div class="ask">Siz nima qilardingiz?<svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></div>
+  </div>
+</div>
+</body>
+</html>

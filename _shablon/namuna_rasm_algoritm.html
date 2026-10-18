@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<style>
+@font-face{font-family:"DM Serif Display";src:url("fonts/dm-serif-display-latin-400-normal.woff2") format("woff2");}
+:root{--emerald:#1B5E3F;--deep:#0D3122;--cream:#FAF7F0;--mint:#7FC9A0;--green:#4CAF7D;--ink:#17322A;--muted:#5C6F66;--amber:#C98A2E;--amberbg:#FBF1E1;--red:#B5513F;--redbg:#F8E7E2}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1280px;height:900px;background:var(--cream);overflow:hidden}
+.fig{position:relative;width:1280px;height:900px;padding:44px 56px;font-family:"Inter",sans-serif;color:var(--ink)}
+.top{display:flex;justify-content:space-between;align-items:flex-start}
+h1{font-family:"DM Serif Display",serif;font-weight:400;font-size:40px;line-height:1.05;color:var(--deep)}
+h1 em{font-style:normal;color:var(--green)}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:20px;color:var(--emerald)}
+.brand img{height:34px}
+.brand b{color:var(--green);font-weight:700}
+.node{position:absolute;border-radius:16px;padding:16px 20px;text-align:center}
+.start{left:390px;top:176px;width:500px;background:var(--emerald);color:var(--cream)}
+.start strong{display:block;font-size:20px}
+.start span{display:block;margin-top:4px;font-size:15px;color:rgba(250,247,240,.8)}
+.check{left:390px;top:296px;width:500px;background:#fff;border:2px solid var(--emerald)}
+.check strong{display:block;font-size:19px;color:var(--deep)}
+.check span{display:block;margin-top:4px;font-size:15px;color:var(--muted)}
+.col{position:absolute;top:456px;width:360px}
+.c1{left:56px}.c2{left:460px}.c3{left:864px}
+.tagc{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border-radius:999px}
+.box{margin-top:12px;border-radius:14px;padding:16px 18px;font-size:16px;line-height:1.4}
+.box b{display:block;font-size:17px;margin-bottom:4px}
+.g .tagc{background:#DDEFE5;color:var(--emerald)}
+.g .box{background:#fff;border:1.5px solid #BFDCCB}
+.g .out{background:var(--emerald);color:var(--cream);border:none}
+.a .tagc{background:var(--amberbg);color:#8A5A14}
+.a .box{background:#fff;border:1.5px solid #EBD3A9}
+.r .tagc{background:var(--redbg);color:var(--red)}
+.r .box{background:#fff;border:1.5px solid #E8C3BA}
+.r .out{background:var(--deep);color:var(--cream);border:none}
+.crp{display:grid;gap:8px;margin-top:10px}
+.crp div{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-radius:10px;font-size:15px}
+.crp div span:first-child{font-weight:700;font-variant-numeric:tabular-nums}
+.crp .l{background:#E6F3EC;color:var(--emerald)}
+.crp .m{background:var(--amberbg);color:#8A5A14}
+.crp .h{background:var(--redbg);color:var(--red)}
+.arrow{position:absolute;stroke:var(--emerald);stroke-width:2.2;fill:none}
+.note{position:absolute;left:56px;right:56px;bottom:40px;display:flex;gap:12px;align-items:flex-start;padding:14px 18px;border-radius:12px;background:#EEF2EE;font-size:15px;line-height:1.4;color:var(--ink)}
+.note b{color:var(--deep)}
+.src{position:absolute;right:56px;bottom:12px;font-size:12px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="fig">
+  <div class="top">
+    <h1>Ambulator o‘tkir yo‘tal:<br><em>antibiotik qachon kerak?</em></h1>
+    <div class="brand"><img src="icon.png" alt=""><span>Maqola<b>Med</b></span></div>
+  </div>
+
+  <svg class="arrow" style="left:0;top:0" width="1280" height="900">
+    <defs><marker id="ah" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1B5E3F"/></marker></defs>
+    <line x1="640" y1="258" x2="640" y2="290" marker-end="url(#ah)"/>
+    <path d="M640 378 V412 H236 V446" marker-end="url(#ah)"/>
+    <path d="M640 412 V446" marker-end="url(#ah)"/>
+    <path d="M640 412 H1044 V446" marker-end="url(#ah)"/>
+  </svg>
+
+  <div class="node start"><strong>Katta yoshli bemor, o‘tkir yo‘tal</strong><span>Pnevmoniyaga klinik shubha bormi?</span></div>
+  <div class="node check"><strong>Hayotiy ko‘rsatkichlar · SpO₂ · auskultatsiya</strong><span>harorat, puls, nafas soni, o‘choqli belgilar</span></div>
+
+  <div class="col c1 g">
+    <span class="tagc">Hammasi normal</span>
+    <div class="box"><b>Pnevmoniya ehtimoli juda past</b>Normal ko‘rsatkichlar + toza auskultatsiya: LR− 0,10 [1]</div>
+    <div class="box out"><b>Antibiotik kerak emas</b>Tushuntirish, simptomatik davo, «qachon qaytish kerak» rejasi. Yo‘tal 2–3 hafta davom etishi normal [4]</div>
+  </div>
+
+  <div class="col c2 a">
+    <span class="tagc">Chegaraviy / noaniq</span>
+    <div class="box"><b>CRP tahlili [5]</b>Klinik baholashdan keyin antibiotik zarurligi noaniq qolsa
+      <div class="crp">
+        <div class="l"><span>&lt; 20 mg/l</span><span>antibiotik odatda yo‘q</span></div>
+        <div class="m"><span>20–100 mg/l</span><span>kechiktirilgan retsept</span></div>
+        <div class="h"><span>&gt; 100 mg/l</span><span>antibiotik darhol</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col c3 r">
+    <span class="tagc">O‘zgarishlar bor</span>
+    <div class="box"><b>Rentgenogramma</b>yoki tajriba bo‘lsa — o‘pka UTT [7]. Isitma, taxikardiya, taxipnoe, SpO₂ pasayishi, o‘choqli belgilar</div>
+    <div class="box out"><b>Pnevmoniya tasdiqlansa</b>Yondosh kasalliksiz: og‘iz orqali amoksitsillin [6]. Barqaror bemorda 5 kundan kam, kamida 3 kun [7]</div>
+  </div>
+
+  <div class="note"><b>Xavf guruhlari</b> — keksa yosh, yurak yetishmovchiligi, qandli diabet, immunosupressiya: chegarani pastroq tuting va qayta ko‘rikni rejalashtiring.</div>
+  <div class="src">Raqamlar maqoladagi manbalar ro‘yxatiga ishora qiladi.</div>
+</div>
+</body>
+</html>
