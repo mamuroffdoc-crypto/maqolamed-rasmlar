@@ -1,0 +1,5 @@
+{"kicker":"Farqlash · Shoshilinch tibbiyot","h1":"Butun oilada<br>bosh og‘rig‘i:<br><em>gripp yoki is gazi?</em>","sub":"Isitmasiz «gripp», normal SpO₂ va gaz pechka.",
+"lbl":"FARQLASH","pill":"CO · Gripp","h3":"Is gazi yoki gripp?","small":"Qabulda 4 ta farq",
+"rows":[["Isitma","yo‘q · bor","ok"],["Kim kasal","bir xona · kunlab","ok"],["Uydan chiqqanda","yengillashadi","ok"],["SpO₂","normal, aldaydi","ok"]],
+"quote":"«Mahallada gripp yurgan, hammamiz shamollab qoldik».","ask":"Siz nima qilardingiz?",
+"points":[["q","Qaysi 2 savol CO ni ochadi?"],["warn","Normal SpO₂ nega aldaydi?"],["test","SpCO ga ishonsa bo‘ladimi?"],["shield","HBO kimga kerak?"]]}
