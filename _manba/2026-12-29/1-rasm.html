@@ -1,0 +1,52 @@
+<!doctype html><html lang="uz"><head><meta charset="utf-8"><base href="file:///home/claude/maqolamed-rasmlar/_shablon/">
+<style>
+@font-face{font-family:"DM Serif Display";src:url("fonts/dm-serif-display-latin-400-normal.woff2") format("woff2");}
+@font-face{font-family:"DM Serif Display";src:url("fonts/dm-serif-display-latin-ext-400-normal.woff2") format("woff2");unicode-range:U+0100-024F,U+1E00-1EFF;}
+:root{--emerald:#1B5E3F;--deep:#0D3122;--cream:#FAF7F0;--mint:#7FC9A0;--green:#4CAF7D;--ink:#17322A;--muted:#5C6F66;--amber:#C98A2E;--amberbg:#FBF1E1;--red:#B5513F;--redbg:#F8E7E2;--tint:#E6F3EC}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1280px;height:var(--H,900px);background:var(--cream);overflow:hidden}
+.fig{position:relative;width:1280px;height:var(--H,900px);padding:44px 56px;font-family:"Inter",sans-serif;color:var(--ink)}
+.top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:28px}
+h1{font-family:"DM Serif Display",serif;font-weight:400;font-size:40px;line-height:1.05;color:var(--deep)}
+h1 em{font-style:normal;color:var(--green)}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:20px;color:var(--emerald)}
+.brand img{height:34px}.brand b{color:var(--green);font-weight:700}
+table{width:100%;border-collapse:separate;border-spacing:0 8px;font-size:16px;line-height:1.35}
+th{text-align:left;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding:0 18px 2px;font-weight:700}
+td{background:#fff;padding:13px 18px;vertical-align:middle}
+td:first-child{border-radius:12px 0 0 12px;font-weight:700;color:var(--deep)}
+td:last-child{border-radius:0 12px 12px 0}
+td.new{background:var(--tint)} td.same{background:#F1EEE6;color:var(--muted)}
+td.warn{background:var(--redbg)}
+.badge{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.08em;padding:4px 9px;border-radius:999px;margin-right:8px;vertical-align:1px}
+.b-new{background:var(--emerald);color:var(--cream)} .b-same{background:#E2DED3;color:var(--muted)} .b-red{background:var(--red);color:#fff} .b-amb{background:var(--amber);color:#fff}
+.muted{color:var(--muted)}
+.node{border-radius:14px;padding:14px 18px;font-size:16px;line-height:1.38}
+.node b{display:block;font-size:17px;margin-bottom:3px}
+.n-dark{background:var(--emerald);color:var(--cream)} .n-deep{background:var(--deep);color:var(--cream)}
+.n-white{background:#fff;border:1.5px solid #BFDCCB} .n-amb{background:#fff;border:1.5px solid #EBD3A9} .n-red{background:var(--redbg);border:1.5px solid #E8C3BA}
+.tagc{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border-radius:999px}
+.t-g{background:#DDEFE5;color:var(--emerald)} .t-a{background:var(--amberbg);color:#8A5A14} .t-r{background:var(--redbg);color:var(--red)}
+.note{position:absolute;left:56px;right:56px;bottom:40px;padding:14px 18px;border-radius:12px;background:#EEF2EE;font-size:15px;line-height:1.4}
+.note b{color:var(--deep)}
+.src{position:absolute;right:56px;bottom:12px;font-size:12px;color:var(--muted)}
+.arrow{stroke:var(--emerald);stroke-width:2.2;fill:none}
+</style></head><body>
+<style>:root{--H:900px}.q{position:absolute;width:560px;left:56px}.r{position:absolute;left:700px;width:524px}.lab{font-size:12px;font-weight:700;letter-spacing:.1em;color:var(--muted);position:absolute}</style>
+<div class="fig"><div class="top"><h1>Paratsetamol ortiqcha dozasi:<br><em>atsetilsisteinni qachon boshlaymiz?</em></h1><div class="brand"><img src="icon.png" alt=""><span>Maqola<b>Med</b></span></div></div>
+<svg style="position:absolute;left:0;top:0" width="1280" height="900"><defs><marker id="ah" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1B5E3F"/></marker></defs>
+<path class="arrow" d="M616 206 H692" marker-end="url(#ah)"/><path class="arrow" d="M336 246 V284" marker-end="url(#ah)"/>
+<path class="arrow" d="M616 330 H692" marker-end="url(#ah)"/><path class="arrow" d="M336 370 V408" marker-end="url(#ah)"/>
+<path class="arrow" d="M616 454 H692" marker-end="url(#ah)"/><path class="arrow" d="M336 494 V532" marker-end="url(#ah)"/>
+<path class="arrow" d="M616 590 H692" marker-end="url(#ah)"/><path class="arrow" d="M336 646 V690" marker-end="url(#ah)"/></svg>
+<div class="node n-dark q" style="top:166px"><b>1. Qabul vaqti aniq va bir martalikmi?</b>Barcha paratsetamolli dorilarni so‘rang, kukunlar ham</div>
+<div class="lab" style="left:630px;top:186px">YO‘Q</div><div class="node n-red r" style="top:170px"><b style="color:#B5513F">NAC ni darhol boshlang</b>Vaqt noaniq, cho‘zilgan yoki anamnez shubhali [1, 3]</div>
+<div class="node n-white q" style="top:290px"><b>2. Doza ≥200 mg/kg yoki ≥10 g? [3]</b>Qaysi biri kichik bo‘lsa</div>
+<div class="lab" style="left:630px;top:310px">YO‘Q</div><div class="node n-white r" style="top:294px"><b>Xavf past</b>Klinik baholash, kuzatuv</div>
+<div class="node n-white q" style="top:414px"><b>3. Daraja 8 soatgacha tayyor bo‘ladimi?</b>Darajani 4 soatdan keyin oling</div>
+<div class="lab" style="left:630px;top:434px">YO‘Q</div><div class="node n-red r" style="top:418px"><b style="color:#B5513F">NAC ni natijani kutmasdan boshlang</b>8 soat ichida — deyarli to‘liq himoya [2, 3]</div>
+<div class="node n-amb q" style="top:538px"><b>4. Daraja nomogramma chizig‘idan yuqorimi?</b>4 soatda: 150 mg/l ≈ 1 000 µmol/l [3] · MHRA: 100 mg/l [2]</div>
+<div class="lab" style="left:630px;top:570px">YO‘Q</div><div class="node n-white r" style="top:552px"><b>Davo shart emas</b>Faqat anamnez ishonchli bo‘lsa</div>
+<div class="node n-deep" style="position:absolute;left:56px;top:698px;width:1168px"><b>HA → NAC: 200 mg/kg 4 soatda, so‘ng 100 mg/kg 16 soatda [3]</b>20-soatda qayta baholang: ALT/AST pasaymoqda, INR &lt; 2,0, bemor klinik yaxshi → to‘xtatish. Aks holda davom ettiring [3].</div>
+<div class="note" style="bottom:44px"><b>Barqarorlashuvdan so‘ng:</b> psixiatrik baholash. 1 mg/l paratsetamol ≈ 6,6 µmol/l — laboratoriya birligini tekshiring.</div>
+<div class="src">NAC — atsetilsistein. Raqamlar maqoladagi manbalar ro‘yxatiga ishora qiladi.</div></div></body></html>
