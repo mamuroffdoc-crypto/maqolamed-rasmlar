@@ -1,0 +1,68 @@
+<!doctype html><html lang="uz"><head><meta charset="utf-8"><base href="file:///home/claude/maqolamed-rasmlar/_shablon/">
+<style>
+@font-face{font-family:"DM Serif Display";src:url("fonts/dm-serif-display-latin-400-normal.woff2") format("woff2");}
+@font-face{font-family:"DM Serif Display";src:url("fonts/dm-serif-display-latin-ext-400-normal.woff2") format("woff2");unicode-range:U+0100-024F,U+1E00-1EFF;}
+:root{--emerald:#1B5E3F;--deep:#0D3122;--cream:#FAF7F0;--mint:#7FC9A0;--green:#4CAF7D;--ink:#17322A;--muted:#5C6F66;--amber:#C98A2E;--amberbg:#FBF1E1;--red:#B5513F;--redbg:#F8E7E2;--tint:#E6F3EC}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1280px;height:var(--H,900px);background:var(--cream);overflow:hidden}
+.fig{position:relative;width:1280px;height:var(--H,900px);padding:44px 56px;font-family:"Inter",sans-serif;color:var(--ink)}
+.top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:28px}
+h1{font-family:"DM Serif Display",serif;font-weight:400;font-size:40px;line-height:1.05;color:var(--deep)}
+h1 em{font-style:normal;color:var(--green)}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:20px;color:var(--emerald)}
+.brand img{height:34px}.brand b{color:var(--green);font-weight:700}
+table{width:100%;border-collapse:separate;border-spacing:0 8px;font-size:16px;line-height:1.35}
+th{text-align:left;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding:0 18px 2px;font-weight:700}
+td{background:#fff;padding:13px 18px;vertical-align:middle}
+td:first-child{border-radius:12px 0 0 12px;font-weight:700;color:var(--deep)}
+td:last-child{border-radius:0 12px 12px 0}
+td.new{background:var(--tint)} td.same{background:#F1EEE6;color:var(--muted)}
+td.warn{background:var(--redbg)}
+.badge{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.08em;padding:4px 9px;border-radius:999px;margin-right:8px;vertical-align:1px}
+.b-new{background:var(--emerald);color:var(--cream)} .b-same{background:#E2DED3;color:var(--muted)} .b-red{background:var(--red);color:#fff} .b-amb{background:var(--amber);color:#fff}
+.muted{color:var(--muted)}
+.node{border-radius:14px;padding:14px 18px;font-size:16px;line-height:1.38}
+.node b{display:block;font-size:17px;margin-bottom:3px}
+.n-dark{background:var(--emerald);color:var(--cream)} .n-deep{background:var(--deep);color:var(--cream)}
+.n-white{background:#fff;border:1.5px solid #BFDCCB} .n-amb{background:#fff;border:1.5px solid #EBD3A9} .n-red{background:var(--redbg);border:1.5px solid #E8C3BA}
+.tagc{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border-radius:999px}
+.t-g{background:#DDEFE5;color:var(--emerald)} .t-a{background:var(--amberbg);color:#8A5A14} .t-r{background:var(--redbg);color:var(--red)}
+.note{position:absolute;left:56px;right:56px;bottom:40px;padding:14px 18px;border-radius:12px;background:#EEF2EE;font-size:15px;line-height:1.4}
+.note b{color:var(--deep)}
+.src{position:absolute;right:56px;bottom:12px;font-size:12px;color:var(--muted)}
+.arrow{stroke:var(--emerald);stroke-width:2.2;fill:none}
+</style></head><body><style>:root{--H:780px}
+.grid4{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.box{background:#fff;border-radius:16px;padding:18px 22px;border:1.5px solid #BFDCCB}
+.box h2{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--emerald);margin-bottom:10px}
+.box ul{list-style:none}.box li{font-size:16px;line-height:1.38;padding:5px 0;border-bottom:1px solid #EEF0EC}
+.box li:last-child{border-bottom:0}.box li b{color:var(--deep)}
+.alarm{margin-top:18px;border-radius:16px;padding:18px 24px;background:var(--redbg);border:1.5px solid #E8C3BA;display:grid;grid-template-columns:1.6fr 1fr;gap:24px;align-items:center}
+.alarm h2{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:8px}
+.flow{display:flex;align-items:center;gap:8px;flex-wrap:nowrap;font-size:15px;font-weight:700;color:var(--deep)}
+.flow span.s{background:#fff;border-radius:10px;padding:8px 12px;border:1.5px solid #E8C3BA}
+.flow i{font-style:normal;color:var(--red);font-size:20px}
+.facts{font-size:15px;line-height:1.45}.facts b{color:var(--red)}
+</style>
+<div class="fig"><div class="top"><h1>Metamizol (analgin):<br><em>xavfsiz qo‘llash kartochkasi</em></h1><div class="brand"><img src="icon.png" alt=""><span>Maqola<b>Med</b></span></div></div>
+<div class="grid4">
+<div class="box"><h2>Doza (≥15 yosh, &gt;53 kg) [8]</h2><ul>
+<li><b>500–1 000 mg</b>, kuniga 4 martagacha</li>
+<li>Odatda <b>2–4 g/sutka</b>, zarurat bo‘lsa 5 g gacha</li>
+<li>Bitta doza &gt;1 g — alohida asoslash kerak</li>
+<li>V/i: <b>≤500 mg (1 ml) daqiqasiga</b>, bemor yotgan holda</li></ul></div>
+<div class="box"><h2>Qarshi ko‘rsatmalar [7, 8]</h2><ul>
+<li>Avval pirazolon agranulotsitozi yoki allergiyasi</li>
+<li>Suyak iligi, qon hosil bo‘lishi kasalliklari</li>
+<li>Analgetik astma, eshakemi–angioedema</li>
+<li>G6FD yetishmovchiligi, o‘tkir porfiriya</li>
+<li>Homiladorlik III trimestri · gipotenziya</li></ul></div>
+<div class="box" style="grid-column:1 / span 2"><h2>O‘zaro ta’sirlar [8]</h2><ul style="display:grid;grid-template-columns:1fr 1fr;column-gap:28px">
+<li><b>CYP2B6/3A4 induksiyasi:</b> bupropion, efavirenz, metadon, valproat</li>
+<li><b>…shuningdek:</b> siklosporin, takrolimus, sertralin — daraja pasayadi</li>
+<li><b>Metotreksat:</b> gematotoksiklik ↑ — birga bermang</li>
+<li><b>Past dozali aspirin:</b> antiagregant ta’sir susayishi mumkin</li></ul></div>
+</div>
+<div class="alarm"><div><h2>Agranulotsitoz belgilari</h2><div class="flow"><span class="s">Isitma · tomoq og‘rig‘i · og‘izda yara</span><i>→</i><span class="s">dorini to‘xtatish</span><i>→</i><span class="s">leykoformula</span></div></div>
+<div class="facts">Dozaga bog‘liq emas; muntazam qon monitoringi tavsiya qilinmaydi [7].<br>Holatlarning <b>92–93%</b> i birinchi 2 oyda boshlanadi [3, 4].<br>Berlinda: <b>0,96</b> holat / 1 mln aholi / yil [5].</div></div>
+<div class="src">Raqamlar maqoladagi manbalar ro‘yxatiga ishora qiladi.</div></div></body></html>
