@@ -1,0 +1,69 @@
+<!doctype html><html lang="uz"><head><meta charset="utf-8"><base href="file:///home/claude/maqolamed-rasmlar/_shablon/">
+<style>
+@font-face{font-family:"DM Serif Display";src:url("fonts/dm-serif-display-latin-400-normal.woff2") format("woff2");}
+@font-face{font-family:"DM Serif Display";src:url("fonts/dm-serif-display-latin-ext-400-normal.woff2") format("woff2");unicode-range:U+0100-024F,U+1E00-1EFF;}
+:root{--emerald:#1B5E3F;--deep:#0D3122;--cream:#FAF7F0;--mint:#7FC9A0;--green:#4CAF7D;--ink:#17322A;--muted:#5C6F66;--amber:#C98A2E;--amberbg:#FBF1E1;--red:#B5513F;--redbg:#F8E7E2;--tint:#E6F3EC}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1280px;height:var(--H,900px);background:var(--cream);overflow:hidden}
+.fig{position:relative;width:1280px;height:var(--H,900px);padding:44px 56px;font-family:"Inter",sans-serif;color:var(--ink)}
+.top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:28px}
+h1{font-family:"DM Serif Display",serif;font-weight:400;font-size:40px;line-height:1.05;color:var(--deep)}
+h1 em{font-style:normal;color:var(--green)}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:20px;color:var(--emerald)}
+.brand img{height:34px}.brand b{color:var(--green);font-weight:700}
+table{width:100%;border-collapse:separate;border-spacing:0 8px;font-size:16px;line-height:1.35}
+th{text-align:left;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding:0 18px 2px;font-weight:700}
+td{background:#fff;padding:13px 18px;vertical-align:middle}
+td:first-child{border-radius:12px 0 0 12px;font-weight:700;color:var(--deep)}
+td:last-child{border-radius:0 12px 12px 0}
+td.new{background:var(--tint)} td.same{background:#F1EEE6;color:var(--muted)}
+td.warn{background:var(--redbg)}
+.badge{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.08em;padding:4px 9px;border-radius:999px;margin-right:8px;vertical-align:1px}
+.b-new{background:var(--emerald);color:var(--cream)} .b-same{background:#E2DED3;color:var(--muted)} .b-red{background:var(--red);color:#fff} .b-amb{background:var(--amber);color:#fff}
+.muted{color:var(--muted)}
+.node{border-radius:14px;padding:14px 18px;font-size:16px;line-height:1.38}
+.node b{display:block;font-size:17px;margin-bottom:3px}
+.n-dark{background:var(--emerald);color:var(--cream)} .n-deep{background:var(--deep);color:var(--cream)}
+.n-white{background:#fff;border:1.5px solid #BFDCCB} .n-amb{background:#fff;border:1.5px solid #EBD3A9} .n-red{background:var(--redbg);border:1.5px solid #E8C3BA}
+.tagc{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border-radius:999px}
+.t-g{background:#DDEFE5;color:var(--emerald)} .t-a{background:var(--amberbg);color:#8A5A14} .t-r{background:var(--redbg);color:var(--red)}
+.note{position:absolute;left:56px;right:56px;bottom:40px;padding:14px 18px;border-radius:12px;background:#EEF2EE;font-size:15px;line-height:1.4}
+.note b{color:var(--deep)}
+.src{position:absolute;right:56px;bottom:12px;font-size:12px;color:var(--muted)}
+.arrow{stroke:var(--emerald);stroke-width:2.2;fill:none}
+</style></head><body><style>:root{--H:800px}
+.wrap{display:grid;grid-template-columns:600px 1fr;gap:30px}
+.steps{display:flex;flex-direction:column;gap:11px}
+.st{display:grid;grid-template-columns:38px 1fr;gap:12px;align-items:start}
+.num{width:38px;height:38px;border-radius:50%;background:var(--emerald);color:var(--cream);display:grid;place-items:center;font-weight:700;font-size:17px}
+.st .node{padding:11px 16px;font-size:15.5px}
+.box{border-radius:16px;padding:16px 20px;margin-bottom:14px}
+.box h3{font-size:16px;letter-spacing:.02em;margin-bottom:8px}
+.box li{list-style:none;padding:6px 0;font-size:15.5px;border-bottom:1px solid rgba(0,0,0,.06)}
+.box li:last-child{border:0}
+.lo{background:#EAF0F7;border:1.5px solid #C5D3E4}.lo h3{color:#2F4E73}
+.hi{background:var(--amberbg);border:1.5px solid #EBD3A9}.hi h3{color:#8A5A14}
+.conv{background:var(--deep);color:var(--cream);border-radius:16px;padding:14px 20px;font-size:15px;line-height:1.5}
+.conv b{color:var(--mint)}
+</style>
+<div class="fig"><div class="top"><h1>HbA1c ni 5 qadamda o‘qish:<br><em>qachon ishonamiz?</em></h1><div class="brand"><img src="icon.png" alt=""><span>Maqola<b>Med</b></span></div></div>
+<div class="wrap">
+<div class="steps">
+<div class="st"><div class="num">1</div><div class="node n-white"><b>Usul</b>NGSP sertifikatli, DCCT ga standartlashtirilgan usulmi? Ekspress-analizator tashxisga ruxsat etilganmi? [1]</div></div>
+<div class="st"><div class="num">2</div><div class="node n-white"><b>Glyukoza bilan mosligi</b>Doimiy, sezilarli nomuvofiqlik → interferensiyani izlang [1]</div></div>
+<div class="st"><div class="num">3</div><div class="node n-amb"><b>Eritrotsitlar umri</b>Anemiya, gemoliz, qon yo‘qotish, qon quyish, homiladorlik, buyrak yetishmovchiligi? [1, 2]</div></div>
+<div class="st"><div class="num">4</div><div class="node n-amb"><b>Gemoglobin varianti</b>HbS, HbC, HbE, HbD, yuqori HbF — ta’sir variant va usulga bog‘liq; ngsp.org/interf.asp [2]</div></div>
+<div class="st"><div class="num">5</div><div class="node n-dark"><b>Qaror</b>Shubha bo‘lsa: tashxis — plazma glyukozasi; nazorat — fruktozamin, glikirlangan albumin yoki glyukoza monitoringi [1, 4]</div></div>
+</div>
+<div>
+<div class="box lo"><h3>↓ Sun’iy past HbA1c</h3><ul>
+<li>Gemolitik anemiya, qon yo‘qotishdan tiklanish</li>
+<li>Yaqinda qon quyish, eritropoetin</li>
+<li>Homiladorlik (odatda) [1]</li>
+<li>G6FD yetishmovchiligi: −0,7–0,8% (gomozigotlar) [1]</li></ul></div>
+<div class="box hi"><h3>↑ Sun’iy yuqori HbA1c</h3><ul>
+<li>Temir tanqisligi (anemiya bilan yoki usiz)</li>
+<li>Temir bilan davolagach HbA1c pasayadi [2]</li></ul></div><div class="box lo" style="background:#F1EEE6;border-color:#E2DED3"><h3 style="color:#5C6F66">↕ Yo‘nalish turlicha</h3><ul><li>Buyrak yetishmovchiligi, dializ (karbamillangan Hb) [1, 2]</li><li>Gemoglobin variantlari — usulga bog‘liq [2]</li></ul></div>
+<div class="conv"><b>Chegaralar:</b> diabet ≥6,5% (48 mmol/mol) <br>Prediabet: 5,7–6,4% (39–47 mmol/mol) [1]<br><b>O‘rtacha glyukoza:</b> 28,7 × HbA1c − 46,7 (mg/dl) [3]<br><b>mmol/mol</b> = 10,93 × % − 23,50 [2]</div>
+</div></div>
+<div class="src">Manbalar: [1] ADA 2026, 2-bo‘lim; [2] NGSP; [3] ADAG; [4] ADA 2026, 6-bo‘lim.</div></div></body></html>
