@@ -1,0 +1,69 @@
+<!doctype html><html lang="uz"><head><meta charset="utf-8"><base href="file:///home/claude/maqolamed-rasmlar/_shablon/">
+<style>
+@font-face{font-family:"DM Serif Display";src:url("fonts/dm-serif-display-latin-400-normal.woff2") format("woff2");}
+@font-face{font-family:"DM Serif Display";src:url("fonts/dm-serif-display-latin-ext-400-normal.woff2") format("woff2");unicode-range:U+0100-024F,U+1E00-1EFF;}
+:root{--emerald:#1B5E3F;--deep:#0D3122;--cream:#FAF7F0;--mint:#7FC9A0;--green:#4CAF7D;--ink:#17322A;--muted:#5C6F66;--amber:#C98A2E;--amberbg:#FBF1E1;--red:#B5513F;--redbg:#F8E7E2;--tint:#E6F3EC}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1280px;height:var(--H,900px);background:var(--cream);overflow:hidden}
+.fig{position:relative;width:1280px;height:var(--H,900px);padding:44px 56px;font-family:"Inter",sans-serif;color:var(--ink)}
+.top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:28px}
+h1{font-family:"DM Serif Display",serif;font-weight:400;font-size:40px;line-height:1.05;color:var(--deep)}
+h1 em{font-style:normal;color:var(--green)}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:20px;color:var(--emerald)}
+.brand img{height:34px}.brand b{color:var(--green);font-weight:700}
+table{width:100%;border-collapse:separate;border-spacing:0 8px;font-size:16px;line-height:1.35}
+th{text-align:left;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding:0 18px 2px;font-weight:700}
+td{background:#fff;padding:13px 18px;vertical-align:middle}
+td:first-child{border-radius:12px 0 0 12px;font-weight:700;color:var(--deep)}
+td:last-child{border-radius:0 12px 12px 0}
+td.new{background:var(--tint)} td.same{background:#F1EEE6;color:var(--muted)}
+td.warn{background:var(--redbg)}
+.badge{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.08em;padding:4px 9px;border-radius:999px;margin-right:8px;vertical-align:1px}
+.b-new{background:var(--emerald);color:var(--cream)} .b-same{background:#E2DED3;color:var(--muted)} .b-red{background:var(--red);color:#fff} .b-amb{background:var(--amber);color:#fff}
+.muted{color:var(--muted)}
+.node{border-radius:14px;padding:14px 18px;font-size:16px;line-height:1.38}
+.node b{display:block;font-size:17px;margin-bottom:3px}
+.n-dark{background:var(--emerald);color:var(--cream)} .n-deep{background:var(--deep);color:var(--cream)}
+.n-white{background:#fff;border:1.5px solid #BFDCCB} .n-amb{background:#fff;border:1.5px solid #EBD3A9} .n-red{background:var(--redbg);border:1.5px solid #E8C3BA}
+.tagc{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border-radius:999px}
+.t-g{background:#DDEFE5;color:var(--emerald)} .t-a{background:var(--amberbg);color:#8A5A14} .t-r{background:var(--redbg);color:var(--red)}
+.note{position:absolute;left:56px;right:56px;bottom:40px;padding:14px 18px;border-radius:12px;background:#EEF2EE;font-size:15px;line-height:1.4}
+.note b{color:var(--deep)}
+.src{position:absolute;right:56px;bottom:12px;font-size:12px;color:var(--muted)}
+.arrow{stroke:var(--emerald);stroke-width:2.2;fill:none}
+</style></head><body><style>:root{--H:860px}
+.start{background:var(--deep);color:var(--cream);border-radius:16px;padding:16px 22px;font-size:18px;text-align:center;width:640px;margin:0 auto}
+.start b{color:var(--mint)}
+.q{margin:14px auto 0;width:640px;text-align:center;background:#fff;border:1.5px solid #BFDCCB;border-radius:14px;padding:12px 18px;font-size:16.5px}
+.q b{display:block;font-size:18px;color:var(--deep)}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:22px}
+.col h3{font-size:15px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px}
+.col ul{list-style:none}
+.col li{padding:9px 0 9px 22px;position:relative;font-size:15.5px;line-height:1.38;border-bottom:1px solid rgba(0,0,0,.06)}
+.col li:before{content:"";position:absolute;left:4px;top:16px;width:8px;height:8px;border-radius:50%;background:currentColor;opacity:.6}
+.c1{background:var(--redbg);border:1.5px solid #E8C3BA;border-radius:16px;padding:18px 22px;color:#5b2a20}
+.c1 h3{color:var(--red)}
+.c2{background:var(--tint);border:1.5px solid #BFDCCB;border-radius:16px;padding:18px 22px;color:var(--ink)}
+.c2 h3{color:var(--emerald)}
+.arrows{display:grid;grid-template-columns:1fr 1fr;text-align:center;font-weight:700;color:var(--emerald);margin-top:10px;font-size:15px}
+</style>
+<div class="fig"><div class="top"><h1>Bosim ≥180/110:<br><em>kaptopril til ostiga emas, avval savol</em></h1><div class="brand"><img src="icon.png" alt=""><span>Maqola<b>Med</b></span></div></div>
+<div class="start"><b>Bosim ≥180/110 mm sim. ust.</b> → favqulodda holatni istisno qiling (ESC 2024, I sinf) [1]</div>
+<div class="q"><b>O‘tkir a’zo shikastlanishi bormi?</b>Ensefalopatiya, insult · o‘tkir koronar sindrom · o‘pka shishi · aorta qatlamlanishi · malign gipertenziya · eklampsiya</div>
+<div class="arrows"><span>↙ HA — favqulodda holat</span><span>YO‘Q — belgisiz og‘ir gipertenziya ↘</span></div>
+<div class="cols">
+<div class="col c1"><h3>Kasalxona, monitoring</h3><ul>
+<li>Qisqa ta’sirli vena ichiga dorilar, deyarli uzluksiz monitoring [1]</li>
+<li>Ensefalopatiya: O‘AB darhol −20–25% [5]</li>
+<li>Malign gipertenziya: O‘AB −20–25% bir necha soatda [5]</li>
+<li>O‘KS: SAB &lt;140 darhol · aorta qatlamlanishi: SAB &lt;120, YuUS &lt;60 [5]</li>
+<li>Tez va haddan tashqari pasaytirish — yo‘q [1]</li></ul></div>
+<div class="col c2"><h3>Poliklinika, shoshilmasdan</h3><ul>
+<li>Tinch xona, yolg‘iz, kamida 1 soat qayta o‘lchash [5]</li>
+<li>Og‘iz orqali doimiy davo; bosim 24–48 soatda asta-sekin tushadi [5]</li>
+<li>Odatda yotqizish shart emas; tez orada ambulator ko‘rik [1, 5]</li>
+<li>Til ostiga nifedipin — yo‘q [5]</li>
+<li>Kaptopril kerak bo‘lsa: og‘iz orqali, past doza, ≥2 soat kuzatuv [2, 7]</li></ul></div>
+</div>
+<div class="note"><b>Kaptopril farmakologiyasi:</b> og‘iz orqali — eng yuqori konsentratsiya ~1 soatda, bosimning eng ko‘p pasayishi 60–90 daqiqada [7]. 20-daqiqada ikkinchi doza berish — keskin pasayish xavfi.</div>
+<div class="src">O‘AB — o‘rtacha arterial bosim; SAB — sistolik bosim; YuUS — yurak urishi soni; O‘KS — o‘tkir koronar sindrom.</div></div></body></html>
