@@ -1,0 +1,62 @@
+<!doctype html><html lang="uz"><head><meta charset="utf-8"><base href="file:///home/claude/maqolamed-rasmlar/_shablon/">
+<style>
+@font-face{font-family:"DM Serif Display";src:url("fonts/dm-serif-display-latin-400-normal.woff2") format("woff2");}
+@font-face{font-family:"DM Serif Display";src:url("fonts/dm-serif-display-latin-ext-400-normal.woff2") format("woff2");unicode-range:U+0100-024F,U+1E00-1EFF;}
+:root{--emerald:#1B5E3F;--deep:#0D3122;--cream:#FAF7F0;--mint:#7FC9A0;--green:#4CAF7D;--ink:#17322A;--muted:#5C6F66;--amber:#C98A2E;--amberbg:#FBF1E1;--red:#B5513F;--redbg:#F8E7E2;--tint:#E6F3EC}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1280px;height:var(--H,900px);background:var(--cream);overflow:hidden}
+.fig{position:relative;width:1280px;height:var(--H,900px);padding:44px 56px;font-family:"Inter",sans-serif;color:var(--ink)}
+.top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:28px}
+h1{font-family:"DM Serif Display",serif;font-weight:400;font-size:40px;line-height:1.05;color:var(--deep)}
+h1 em{font-style:normal;color:var(--green)}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:20px;color:var(--emerald)}
+.brand img{height:34px}.brand b{color:var(--green);font-weight:700}
+table{width:100%;border-collapse:separate;border-spacing:0 8px;font-size:16px;line-height:1.35}
+th{text-align:left;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding:0 18px 2px;font-weight:700}
+td{background:#fff;padding:13px 18px;vertical-align:middle}
+td:first-child{border-radius:12px 0 0 12px;font-weight:700;color:var(--deep)}
+td:last-child{border-radius:0 12px 12px 0}
+td.new{background:var(--tint)} td.same{background:#F1EEE6;color:var(--muted)}
+td.warn{background:var(--redbg)}
+.badge{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.08em;padding:4px 9px;border-radius:999px;margin-right:8px;vertical-align:1px}
+.b-new{background:var(--emerald);color:var(--cream)} .b-same{background:#E2DED3;color:var(--muted)} .b-red{background:var(--red);color:#fff} .b-amb{background:var(--amber);color:#fff}
+.muted{color:var(--muted)}
+.node{border-radius:14px;padding:14px 18px;font-size:16px;line-height:1.38}
+.node b{display:block;font-size:17px;margin-bottom:3px}
+.n-dark{background:var(--emerald);color:var(--cream)} .n-deep{background:var(--deep);color:var(--cream)}
+.n-white{background:#fff;border:1.5px solid #BFDCCB} .n-amb{background:#fff;border:1.5px solid #EBD3A9} .n-red{background:var(--redbg);border:1.5px solid #E8C3BA}
+.tagc{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border-radius:999px}
+.t-g{background:#DDEFE5;color:var(--emerald)} .t-a{background:var(--amberbg);color:#8A5A14} .t-r{background:var(--redbg);color:var(--red)}
+.note{position:absolute;left:56px;right:56px;bottom:40px;padding:14px 18px;border-radius:12px;background:#EEF2EE;font-size:15px;line-height:1.4}
+.note b{color:var(--deep)}
+.src{position:absolute;right:56px;bottom:12px;font-size:12px;color:var(--muted)}
+.arrow{stroke:var(--emerald);stroke-width:2.2;fill:none}
+</style></head><body><style>:root{--H:700px}
+.cols{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.col{border-radius:16px;padding:16px 18px;font-size:15px;line-height:1.4}
+.col h2{font-size:15px;letter-spacing:.02em;margin-bottom:8px}
+.col ul{list-style:none}.col li{padding:5px 0;border-bottom:1px solid rgba(0,0,0,.07)}.col li:last-child{border-bottom:0}
+.c1{background:var(--deep);color:var(--cream)}.c1 h2{color:var(--mint)}.c1 li{border-color:rgba(255,255,255,.12)}
+.c2,.c4{background:#fff;border:1.5px solid #BFDCCB}.c2 h2,.c4 h2{color:var(--emerald)}
+.c3{background:var(--amberbg);border:1.5px solid #EBD3A9}.c3 h2{color:#8A5A14}
+.f{font-variant-numeric:tabular-nums;font-weight:700}
+.ex{margin-top:16px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.k{border-radius:12px;padding:12px 16px;font-size:14.5px;line-height:1.38;background:var(--tint)}.k b{display:block;font-size:15px;color:var(--emerald);margin-bottom:4px}
+.k.r{background:var(--redbg)}.k.r b{color:var(--red)}
+.exh{margin-top:18px;font-size:15px;font-weight:700;color:var(--muted)}
+.exh span{color:var(--deep)}
+</style>
+<div class="fig"><div class="top"><h1>Arterial qon gazlari:<br><em>4 qadamli o‘qish algoritmi</em></h1><div class="brand"><img src="icon.png" alt=""><span>Maqola<b>Med</b></span></div></div>
+<div class="cols">
+<div class="col c1"><h2>1. pH va birlamchi buzilish [2]</h2><ul><li>pH &lt;7,35: atsidemiya; &gt;7,45: alkalemiya</li><li>Me’yor: PaCO2 35–45 mm sim. ust.; tayanch HCO3 24 mmol/l</li><li>PaCO2 va HCO3 bir tomonga: oddiy buzilish</li><li>Qarama-qarshi tomonga: aralash buzilish</li></ul></div>
+<div class="col c2"><h2>2. Kompensatsiya [2]</h2><ul><li>Metabolik atsidoz (Winter): PaCO2 = <span class="f">1,54 × HCO3 + 8,36 ± 2,2</span></li><li>Metabolik alkaloz: PaCO2 = 0,7 × HCO3 + 20 ± 5</li><li>Respirator atsidoz: ΔHCO3 = 0,1 (o‘tkir) yoki 0,35 (surunkali) × ΔPaCO2</li></ul></div>
+<div class="col c3"><h2>3. Anion oraliq [3]</h2><ul><li>AG = Na − (Cl + HCO3)</li><li>ISE analizatorda o‘rtacha 6 ± 3 mmol/l; o‘z laboratoriyangiz me’yori</li><li>Albumin har 1 g/dl kam: AG ga +2,5 mmol/l</li><li>ΔAG/ΔHCO3: yashirin ikkinchi buzilish</li></ul></div>
+<div class="col c4"><h2>4. Oksigenatsiya [4, 5]</h2><ul><li>PAO2 = FiO2 × (Patm − PH2O) − PaCO2/0,8</li><li>A–a = PAO2 − PaO2; kutilgan (yosh + 10)/4</li><li>A–a me’yorda: gipoventilatsiya; oshgan: o‘pka kasalligi</li><li>SpO2 maqsadi 88–92% (giperkapniya xavfi), aks holda 94–98%</li></ul></div></div>
+<div class="exh">Bizning bemor: <span>66 yosh, SOO‘K, pnevmoniya · pH 7,13 · PaCO2 50 · HCO3 16 · PaO2 52 (havo)</span></div>
+<div class="ex">
+<div class="k r"><b>Atsidemiya</b>PaCO2 ↑ va HCO3 ↓: respirator + metabolik atsidoz</div>
+<div class="k r"><b>Kutilgan PaCO2 31–35</b>Haqiqiy 50: qo‘shimcha respirator atsidoz (charchash)</div>
+<div class="k r"><b>AG 20 → 23</b>Albumin 28 g/l ga tuzatildi; laktat 4,2: laktatatsidoz</div>
+<div class="k r"><b>A–a 35 (kutilgan 19)</b>PAO2 ≈ 87: pnevmoniya gipoksemiya bermoqda</div></div>
+<div class="note"><b>Venoz gaz:</b> pH va HCO3 ga tayanish mumkin; venoz PCO2 ≤45 mm sim. ust. giperkapniyani inkor qiladi, lekin PaCO2 va A–a gradient o‘rnini bosmaydi [6].</div>
+<div class="src">Raqamlar maqoladagi manbalar ro‘yxatiga ishora qiladi.</div></div></body></html>
