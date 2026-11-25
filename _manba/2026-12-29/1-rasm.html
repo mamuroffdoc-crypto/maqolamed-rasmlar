@@ -31,22 +31,24 @@ td.warn{background:var(--redbg)}
 .note b{color:var(--deep)}
 .src{position:absolute;right:56px;bottom:12px;font-size:12px;color:var(--muted)}
 .arrow{stroke:var(--emerald);stroke-width:2.2;fill:none}
-</style></head><body>
-<style>:root{--H:900px}.q{position:absolute;width:560px;left:56px}.r{position:absolute;left:700px;width:524px}.lab{font-size:12px;font-weight:700;letter-spacing:.1em;color:var(--muted);position:absolute}</style>
+</style></head><body><style>:root{--H:620px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.steps .node{font-size:15px;min-height:200px}
+.steps .node b{font-size:16.5px;margin-bottom:6px}
+.lines{margin-top:16px;display:grid;grid-template-columns:1.1fr 1fr;gap:16px}
+table{border-spacing:0 6px} td{padding:9px 14px;font-size:15.5px} th{padding:0 14px}
+</style>
 <div class="fig"><div class="top"><h1>Paratsetamol ortiqcha dozasi:<br><em>atsetilsisteinni qachon boshlaymiz?</em></h1><div class="brand"><img src="icon.png" alt=""><span>Maqola<b>Med</b></span></div></div>
-<svg style="position:absolute;left:0;top:0" width="1280" height="900"><defs><marker id="ah" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1B5E3F"/></marker></defs>
-<path class="arrow" d="M616 206 H692" marker-end="url(#ah)"/><path class="arrow" d="M336 246 V284" marker-end="url(#ah)"/>
-<path class="arrow" d="M616 330 H692" marker-end="url(#ah)"/><path class="arrow" d="M336 370 V408" marker-end="url(#ah)"/>
-<path class="arrow" d="M616 454 H692" marker-end="url(#ah)"/><path class="arrow" d="M336 494 V532" marker-end="url(#ah)"/>
-<path class="arrow" d="M616 590 H692" marker-end="url(#ah)"/><path class="arrow" d="M336 646 V690" marker-end="url(#ah)"/></svg>
-<div class="node n-dark q" style="top:166px"><b>1. Qabul vaqti aniq va bir martalikmi?</b>Barcha paratsetamolli dorilarni so‘rang, kukunlar ham</div>
-<div class="lab" style="left:630px;top:186px">YO‘Q</div><div class="node n-red r" style="top:170px"><b style="color:#B5513F">NAC ni darhol boshlang</b>Vaqt noaniq, cho‘zilgan yoki anamnez shubhali [1, 3]</div>
-<div class="node n-white q" style="top:290px"><b>2. Doza ≥200 mg/kg yoki ≥10 g? [3]</b>Qaysi biri kichik bo‘lsa</div>
-<div class="lab" style="left:630px;top:310px">YO‘Q</div><div class="node n-white r" style="top:294px"><b>Xavf past</b>Klinik baholash, kuzatuv</div>
-<div class="node n-white q" style="top:414px"><b>3. Daraja 8 soatgacha tayyor bo‘ladimi?</b>Darajani 4 soatdan keyin oling</div>
-<div class="lab" style="left:630px;top:434px">YO‘Q</div><div class="node n-red r" style="top:418px"><b style="color:#B5513F">NAC ni natijani kutmasdan boshlang</b>8 soat ichida — deyarli to‘liq himoya [2, 3]</div>
-<div class="node n-amb q" style="top:538px"><b>4. Daraja nomogramma chizig‘idan yuqorimi?</b>4 soatda: 150 mg/l ≈ 1 000 µmol/l [3] · MHRA: 100 mg/l [2]</div>
-<div class="lab" style="left:630px;top:570px">YO‘Q</div><div class="node n-white r" style="top:552px"><b>Davo shart emas</b>Faqat anamnez ishonchli bo‘lsa</div>
-<div class="node n-deep" style="position:absolute;left:56px;top:698px;width:1168px"><b>HA → NAC: 200 mg/kg 4 soatda, so‘ng 100 mg/kg 16 soatda [3]</b>20-soatda qayta baholang: ALT/AST pasaymoqda, INR &lt; 2,0, bemor klinik yaxshi → to‘xtatish. Aks holda davom ettiring [3].</div>
-<div class="note" style="bottom:44px"><b>Barqarorlashuvdan so‘ng:</b> psixiatrik baholash. 1 mg/l paratsetamol ≈ 6,6 µmol/l — laboratoriya birligini tekshiring.</div>
-<div class="src">NAC — atsetilsistein. Raqamlar maqoladagi manbalar ro‘yxatiga ishora qiladi.</div></div></body></html>
+<div class="steps">
+<div class="node n-dark"><b>1. Doza va vaqt</b>mg/kg ni hisoblang. Xavfli: &gt;200 mg/kg yoki &gt;10 g [1]; Buyuk Britaniya: &gt;75 mg/kg [2]. Kombinatsiyalangan kukunlarni so‘rang.</div>
+<div class="node n-white"><b>2. Daraja va nomogramma</b>4–24 soatda qondagi paratsetamol. Natija 8 soatdan kechiksa yoki vaqt noma’lum bo‘lsa, kutmasdan boshlang [1].</div>
+<div class="node n-white"><b>3. Atsetilsistein</b>Kamida 300 mg/kg 20–24 soatda [1]. 12 soatlik rejim: 100 mg/kg 2 soatda + 200 mg/kg 10 soatda [8]. Anafilaktoid reaksiya qarshi ko‘rsatma emas [3].</div>
+<div class="node n-red"><b>4. Xavotir belgilari</b>≥30 g yoki 4 soatda &gt;300 mg/l: toksikolog [1]. ≥900 mg/l + atsidoz: dializ [1]. pH &lt;7,3, laktat &gt;3: transplantatsiya markazi [7].</div>
+</div>
+<div class="lines"><table><tr><th>Soat</th><th>Britaniya chizig‘i</th><th>AQSh chizig‘i</th></tr>
+<tr><td>4</td><td class="new"><b>100 mg/l</b></td><td><b>150 mg/l</b></td></tr>
+<tr><td>5</td><td class="new">≈84 mg/l</td><td>≈126 mg/l</td></tr>
+<tr><td>8</td><td class="new">≈50 mg/l</td><td>≈75 mg/l</td></tr>
+<tr><td>15</td><td class="new">15 mg/l</td><td>≈22 mg/l</td></tr></table>
+<div class="node n-amb" style="align-self:start;margin-top:30px"><b>Vaqt hal qiladi [5]</b>Og‘iz orqali atsetilsistein 10 soatgacha boshlanganda gepatotoksiklik 6,1%, 10–24 soatda 26,4%. ≈ qiymatlar chiziqning 4 soatlik yarim yemirilishi bo‘yicha hisoblangan [3, 4].</div></div>
+<div class="src">Raqamlar maqoladagi manbalar ro‘yxatiga ishora qiladi.</div></div></body></html>
