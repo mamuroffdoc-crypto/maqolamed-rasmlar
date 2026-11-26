@@ -31,38 +31,42 @@ td.warn{background:var(--redbg)}
 .note b{color:var(--deep)}
 .src{position:absolute;right:56px;bottom:12px;font-size:12px;color:var(--muted)}
 .arrow{stroke:var(--emerald);stroke-width:2.2;fill:none}
-</style></head><body><style>:root{--H:780px}
-.grid4{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-.box{background:#fff;border-radius:16px;padding:18px 22px;border:1.5px solid #BFDCCB}
-.box h2{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--emerald);margin-bottom:10px}
-.box ul{list-style:none}.box li{font-size:16px;line-height:1.38;padding:5px 0;border-bottom:1px solid #EEF0EC}
-.box li:last-child{border-bottom:0}.box li b{color:var(--deep)}
-.alarm{margin-top:18px;border-radius:16px;padding:18px 24px;background:var(--redbg);border:1.5px solid #E8C3BA;display:grid;grid-template-columns:1.6fr 1fr;gap:24px;align-items:center}
-.alarm h2{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:8px}
-.flow{display:flex;align-items:center;gap:8px;flex-wrap:nowrap;font-size:15px;font-weight:700;color:var(--deep)}
-.flow span.s{background:#fff;border-radius:10px;padding:8px 12px;border:1.5px solid #E8C3BA}
-.flow i{font-style:normal;color:var(--red);font-size:20px}
-.facts{font-size:15px;line-height:1.45}.facts b{color:var(--red)}
+</style></head><body><style>:root{--H:860px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.box{background:#fff;border-radius:16px;padding:20px 24px}
+.box h2{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--emerald);margin-bottom:12px}
+.box ul{list-style:none;font-size:15.5px;line-height:1.42}
+.box li{padding:6px 0;border-bottom:1px solid #EEE9DD}.box li:last-child{border:0}
+.box li b{color:var(--deep)}
+.flow{display:flex;flex-direction:column;gap:10px}
+.down{text-align:center;color:var(--emerald);font-size:20px;line-height:1}
 </style>
-<div class="fig"><div class="top"><h1>Metamizol (analgin):<br><em>xavfsiz qo‘llash kartochkasi</em></h1><div class="brand"><img src="icon.png" alt=""><span>Maqola<b>Med</b></span></div></div>
-<div class="grid4">
-<div class="box"><h2>Doza (≥15 yosh, &gt;53 kg) [8]</h2><ul>
-<li><b>500–1 000 mg</b>, kuniga 4 martagacha</li>
-<li>Odatda <b>2–4 g/sutka</b>, zarurat bo‘lsa 5 g gacha</li>
-<li>Bitta doza &gt;1 g — alohida asoslash kerak</li>
-<li>V/i: <b>≤500 mg (1 ml) daqiqasiga</b>, bemor yotgan holda</li></ul></div>
-<div class="box"><h2>Qarshi ko‘rsatmalar [7, 8]</h2><ul>
-<li>Avval pirazolon agranulotsitozi yoki allergiyasi</li>
-<li>Suyak iligi, qon hosil bo‘lishi kasalliklari</li>
-<li>Analgetik astma, eshakemi–angioedema</li>
-<li>G6FD yetishmovchiligi, o‘tkir porfiriya</li>
-<li>Homiladorlik III trimestri · gipotenziya</li></ul></div>
-<div class="box" style="grid-column:1 / span 2"><h2>O‘zaro ta’sirlar [8]</h2><ul style="display:grid;grid-template-columns:1fr 1fr;column-gap:28px">
-<li><b>CYP2B6/3A4 induksiyasi:</b> bupropion, efavirenz, metadon, valproat</li>
-<li><b>…shuningdek:</b> siklosporin, takrolimus, sertralin — daraja pasayadi</li>
-<li><b>Metotreksat:</b> gematotoksiklik ↑ — birga bermang</li>
-<li><b>Past dozali aspirin:</b> antiagregant ta’sir susayishi mumkin</li></ul></div>
+<div class="fig"><div class="top"><h1>Metamizol (analgin)<br><em>fokusda</em></h1><div class="brand"><img src="icon.png" alt=""><span>Maqola<b>Med</b></span></div></div>
+<div class="cols"><div class="flow">
+<div class="box"><h2>Doza [8]</h2><ul>
+<li><b>≥15 yosh:</b> bir martalik ≤1 000 mg, kuniga 4 martagacha</li>
+<li><b>Og‘iz orqali:</b> sutkasiga ≤4 000 mg; in’eksiya ≤5 000 mg</li>
+<li><b>Vena ichiga:</b> daqiqasiga 500 mg dan tez emas [2]</li></ul></div>
+<div class="box"><h2>Qarshi ko‘rsatmalar [2, 8]</h2><ul>
+<li>Ilgari agranulotsitoz, suyak ko‘migi kasalligi</li>
+<li>Pirazolonlarga allergiya, analgetik astma</li>
+<li>G6FD tanqisligi, o‘tkir porfiriya</li>
+<li>Homiladorlikning III trimestri, emizish</li>
+<li>3 oygacha yoki 5 kg gacha chaqaloq; v/i 1 yoshgacha</li>
+<li>Gipotenziya (in’eksiya uchun)</li></ul></div>
+<div class="box"><h2>O‘zaro ta’sir [2]</h2><ul>
+<li><b>Metotreksat:</b> qonga toksiklik kuchayadi</li>
+<li><b>Siklosporin, takrolimus, bupropion, valproat:</b> darajasi pasayadi</li>
+<li><b>Past dozali aspirin:</b> antiagregant ta’sir kamayishi mumkin</li></ul></div>
 </div>
-<div class="alarm"><div><h2>Agranulotsitoz belgilari</h2><div class="flow"><span class="s">Isitma · tomoq og‘rig‘i · og‘izda yara</span><i>→</i><span class="s">dorini to‘xtatish</span><i>→</i><span class="s">leykoformula</span></div></div>
-<div class="facts">Dozaga bog‘liq emas; muntazam qon monitoringi tavsiya qilinmaydi [7].<br>Holatlarning <b>92–93%</b> i birinchi 2 oyda boshlanadi [3, 4].<br>Berlinda: <b>0,96</b> holat / 1 mln aholi / yil [5].</div></div>
-<div class="src">Raqamlar maqoladagi manbalar ro‘yxatiga ishora qiladi.</div></div></body></html>
+<div class="flow">
+<div class="node n-deep"><b>Metamizol fonida yoki to‘xtatgandan keyin</b>isitma, et uvishishi, tomoq og‘rig‘i, shilliq qavatda og‘riqli yaralar</div>
+<div class="down">↓</div>
+<div class="node n-red"><b>Darhol dorini to‘xtating</b>natijani kutmasdan [7]</div>
+<div class="down">↓</div>
+<div class="node n-white"><b>Shu zahoti leykotsitar formulali qon tahlili</b>«troyka» yoki yana bir isitma tushiruvchi emas</div>
+<div class="down">↓</div>
+<div class="node n-amb"><b>Agranulotsitoz tasdiqlansa</b>shoshilinch yotqizish, neytropenik isitma sifatida davolash; metamizol umrbod mumkin emas</div>
+<div class="node n-white" style="margin-top:8px"><b>Esda tuting</b>Isitma tushirish uchun yoki antibiotik bilan berilganda belgilar yashirinishi mumkin. Muntazam qon tahlili endi tavsiya etilmaydi [7].</div>
+</div></div>
+<div class="src">EMA 2024 (agranulotsitoz), EMA 2018 (doza), Germaniya yo‘riqnomasi (Fachinformation, 2024)</div></div></body></html>
