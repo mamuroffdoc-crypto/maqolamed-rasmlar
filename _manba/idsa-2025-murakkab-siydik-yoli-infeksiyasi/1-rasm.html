@@ -31,20 +31,31 @@ td.warn{background:var(--redbg)}
 .note b{color:var(--deep)}
 .src{position:absolute;right:56px;bottom:12px;font-size:12px;color:var(--muted)}
 .arrow{stroke:var(--emerald);stroke-width:2.2;fill:none}
-</style></head><body><style>:root{--H:900px}
-td{padding:11px 16px;font-size:15.5px} td:first-child{width:210px}
-td.old{width:330px}
+</style></head><body><style>:root{--H:720px}
+<body><style>:root{--H:720px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:18px}
+.steps .node{min-height:190px} .note{position:static;margin-top:18px}
+.num{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--emerald);color:var(--cream);font-weight:700;font-size:15px;margin-bottom:8px}
+.n-dark .num{background:var(--mint);color:var(--deep)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:18px}
+.bot{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+ul{margin:6px 0 0 18px} li{margin:3px 0}
 </style>
-<div class="fig"><div class="top"><h1>IDSA 2025: murakkab siydik yo‘li infeksiyasi —<br><em>nima o‘zgardi?</em></h1><div class="brand"><img src="icon.png" alt=""><span>Maqola<b>Med</b></span></div></div>
-<table><tr><th>Mavzu</th><th>Avval (an’anaviy yondashuv)</th><th>IDSA 2025</th></tr>
-<tr><td>Qamrov</td><td class="same old">IDSA faqat ayollardagi asoratlanmagan sistit va pielonefritni qamragan [1]</td><td class="new"><span class="badge b-new">YANGI</span>Birinchi cUTI tavsiyanomasi, erkak va ayollar uchun [1]</td></tr>
-<tr><td>Ta’rif</td><td class="same old">«Xavf toifasi»: erkak, diabet, immunosupressiya, urologik anomaliya</td><td class="new"><span class="badge b-new">YANGI</span>Qovuqdan tashqariga chiqqan infeksiya: isitma, tizimli belgilar, bel og‘rig‘i. Pielonefrit — cUTI [1]</td></tr>
-<tr><td>Empirik tanlov</td><td class="same old">Dori ro‘yxati bo‘yicha</td><td class="new"><span class="badge b-new">YANGI</span>4 qadam: sepsis → oldingi rezistentlik va 12 oydagi ftorxinolon → bemor omillari → antibiogramma (shokda ≥90%, sepsisda ≥80% sezgirlik) [2]</td></tr>
-<tr><td>Karbapenemlar</td><td class="same old">—</td><td class="new">Faqat sepsisda; sepsissiz — sefalosporin 3/4, piperatsillin-tazobaktam yoki ftorxinolon [2]</td></tr>
-<tr><td>Nitrofurantoin, fosfomitsin</td><td class="same old">Sistit dorilari</td><td class="warn"><span class="badge b-red">YO‘Q</span>cUTI uchun odatda to‘g‘ri tanlov emas [2]</td></tr>
-<tr><td>Aminoglikozidlar</td><td class="same old">Pielonefritda bir doza varianti</td><td class="warn">Afzal emas: nefrotoksiklik [2]</td></tr>
-<tr><td>Ukoldan tabletkaga</td><td class="same old">Ko‘pincha butun kurs parenteral</td><td class="new"><span class="badge b-new">YANGI</span>Ahvoli yaxshilansa — og‘iz orqali, bakteriemiyada ham [4]</td></tr>
-<tr><td>Davomiylik</td><td class="same old">Ko‘pincha 10–14 kun</td><td class="new"><span class="badge b-new">YANGI</span>Ftorxinolon 5–7 kun, boshqa dori 7 kun; bakteriemiyada 7 kun. Birinchi samarali kundan hisoblanadi [5]</td></tr>
-</table>
-<div class="note"><b>Muhim:</b> davolash bo‘yicha deyarli barcha tavsiyalar shartli, dalil ishonchliligi asosan past yoki juda past. Prostatitga shubha bo‘lgan isitmali erkaklarda uzunroq kurs kerak bo‘lishi mumkin [5].</div>
-<div class="src">Raqamlar maqoladagi manbalar ro‘yxatiga ishora qiladi.</div></div></body></html>
+<div class="fig"><div class="top"><h1>Murakkab SYI, IDSA 2025:<br><em>empirik tanlovning 4 qadami</em></h1><div class="brand"><img src="icon.png" alt=""><span>Maqola<b>Med</b></span></div></div>
+<div class="steps">
+<div class="node n-white"><div class="num">1</div><b>Og‘irlik</b>Sepsis bormi? SOFA ≥2 ballga oshgan (skrining: qSOFA yoki SIRS)</div>
+<div class="node n-white"><div class="num">2</div><b>Rezistentlik xavfi</b>Avvalgi ekmada rezistent chiqqan dori yo‘q. So‘nggi 12 oyda ftorxinolon olgan bo‘lsa, ftorxinolon yo‘q</div>
+<div class="node n-white"><div class="num">3</div><b>Bemor omillari</b>Allergiya, qarshi ko‘rsatma, dorilararo ta’sir</div>
+<div class="node n-amb"><div class="num">4</div><b>Antibiogramma (faqat sepsisda)</b>Mahalliy, ≤12 oylik. Sezgirlik: septik shokda ≥90%, shoksiz sepsisda ≥80%</div>
+</div>
+<div class="two">
+<div class="node n-red"><b>Sepsis bor</b>3–4-avlod sefalosporin, karbapenem, piperatsillin-tazobaktam yoki ftorxinolon</div>
+<div class="node n-white"><b>Sepsis yo‘q</b>Shu ro‘yxat, karbapenemsiz. Yangi preparatlar va aminoglikozidlar birinchi tanlov emas</div>
+</div>
+<div class="bot">
+<div class="node n-dark"><b>Ukoldan tabletkaga</b>Yaxshilanayotgan, og‘izdan qabul qila oladigan, samarali og‘iz preparati bor bemorda, bakteriemiyada ham [4]</div>
+<div class="node n-deep"><b>Davomiylik (yaxshilansa)</b>Ftorxinolon: 5–7 kun · Boshqa dorilar: 7 kun · Gramm-manfiy bakteriemiya: 7 kun [5]</div>
+</div>
+<div class="note"><b>Eslatma:</b> barcha tavsiyalar shartli. Diabet yoki erkak jinsi o‘zi SYI ni «murakkab» qilmaydi: mezon qovuqdan tashqaridagi infeksiya belgilari (isitma, titroq, bel og‘rig‘i).</div>
+<div class="src">Manbalar: [2], [4], [5]</div>
+</div></body></html>
