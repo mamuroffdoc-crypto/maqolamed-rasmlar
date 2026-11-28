@@ -1,0 +1,8 @@
+{"kicker": "Klinik holat · Pediatriya",
+ "h1": "Chaqaloqda<br>sariqlik:<br><em>fototerapiya qachon?</em>",
+ "sub": "Ko‘z bilan emas: soat, gestatsiya va bilirubin bilan.",
+ "lbl": "BEMOR", "pill": "72 soat", "h3": "Qiz bola, 39 hafta", "small": "Faqat ko‘krak suti, sariqlik qoringacha",
+ "rows": [["Vazn", "3 300 g"], ["Uyga chiqarilgan", "36 soatligida"], ["TcB", "16,9 mg/dl"], ["TSB", "20,1 mg/dl"], ["DAT", "manfiy", "ok"]],
+ "quote": "«Quyoshga qo‘yamiz, shakarli suv beramiz».", "ask": "Siz nima qilardingiz?",
+ "points": [["eye", "Ko‘z bilan baholash yetarlimi?"], ["chart", "Fototerapiya chegarasi qayerda?"], ["sun", "Quyosh va shakarli suv yordam beradimi?"], ["pill", "Sariqlikka dori kerakmi?"]],
+ "css16": "h1{font-size:74px}", "css45": "h1{font-size:100px}"}
