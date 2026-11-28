@@ -1,0 +1,8 @@
+{"kicker": "Dori fokusda · Kardiologiya",
+ "h1": "Kaptopril<br>til ostiga:<br><em>hali ham kerakmi?</em>",
+ "sub": "«Gipertonik kriz»da raqamni emas, bemorni davolaymiz.",
+ "lbl": "DORI KARTOCHKASI", "pill": "AO‘F ingibitori", "h3": "Kaptopril", "small": "Yo‘riqnomada faqat og‘iz orqali",
+ "rows": [["Eng ko‘p ta’sir", "60–90 daqiqada"], ["Yarim chiqarilish", "&lt; 2 soat"], ["Ovqat bilan", "so‘rilish 30–40% ↓"], ["Homiladorlik", "qarshi ko‘rsatma"], ["Diuretik fonida", "gipotenziya xavfi"]],
+ "quote": "«Yana bittasini beraylikmi?»", "ask": "Siz nima qilardingiz?",
+ "points": [["q", "Kriz yoki shunchaki yuqori bosim?"], ["clock", "Bosimni tez tushirish kerakmi?"], ["pill", "Kaptopril qachon va qanday?"], ["alert", "Til ostiga nifedipin nega xavfli?"]],
+ "css16": "h1{font-size:76px}", "css45": "h1{font-size:100px}"}
